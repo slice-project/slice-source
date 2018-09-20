@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            name="ADL">
+         <property
+               name="app.Name"
+               value="ADL">
+         </property>
+         <property
+               name="appName"
+               value="ADL">
+         </property>
+         <property
+               name="aboutText"
+               value="SLICE Tools">
+         </property>
+         <property
+               name="aboutImage"
+               value="icons/SLICE-about.png">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/SLICE_16.png,icons/SLICE_32.png,icons/SLICE_48.png,icons/SLICE_64.png,icons/SLICE_128.png,icons/SLICE_256.png">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
