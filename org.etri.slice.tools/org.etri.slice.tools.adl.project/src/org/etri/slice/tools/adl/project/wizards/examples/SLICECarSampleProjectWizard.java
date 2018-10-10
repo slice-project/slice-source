@@ -60,7 +60,7 @@ public class SLICECarSampleProjectWizard extends Wizard implements INewWizard {
 	private static final String SAMPLE_CAR_PROJECT_DOMAIN = "car";
 	
 	/**
-	 * 
+	 *  
 	 */
 	public SLICECarSampleProjectWizard() {
 		super();		

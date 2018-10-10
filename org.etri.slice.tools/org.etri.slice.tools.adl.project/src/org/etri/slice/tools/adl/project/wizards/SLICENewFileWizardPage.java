@@ -110,7 +110,7 @@ public class SLICENewFileWizardPage extends WizardPage {
 		checkButton.setText("generate sample adl");
 		checkButton.setSelection(false);
 		
-		initialize();
+		initialize(); 
 		dialogChanged();
 		setControl(container);
 	}
