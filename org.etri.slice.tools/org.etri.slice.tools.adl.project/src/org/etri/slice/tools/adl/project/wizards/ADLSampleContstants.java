@@ -5,7 +5,7 @@ public class ADLSampleContstants {
 			"\ndomain {0}\n" + 
 			"'{'\n" + 
 			"\n\n" + 
-			"}";
+			"}"; 
 	
 	public static final String SAMPLE_ADL_CONTENTS = 
 	"import org.etri.slice.commons.SliceException\n" + 

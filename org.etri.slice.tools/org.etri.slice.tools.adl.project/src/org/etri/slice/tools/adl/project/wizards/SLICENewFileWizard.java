@@ -112,7 +112,7 @@ public class SLICENewFileWizard extends Wizard implements INewWizard {
 		
 		if (!resource.exists() || !(resource instanceof IContainer)) {
 			throwCoreException("Container \"" + containerName + "\" does not exist.");
-		} 
+		}
 		
 		IContainer container = (IContainer) resource;
 		

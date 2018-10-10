@@ -73,7 +73,7 @@ public class SLICENewProjectWizardPage extends WizardPage {
 		gd = new GridData(GridData.FILL_HORIZONTAL);
 		gd.horizontalSpan = 2;
 		domainText.setLayoutData(gd);
-		 
+		
 		domainText.addModifyListener(new ModifyListener() {
 			@Override
 			public void modifyText(ModifyEvent e) {

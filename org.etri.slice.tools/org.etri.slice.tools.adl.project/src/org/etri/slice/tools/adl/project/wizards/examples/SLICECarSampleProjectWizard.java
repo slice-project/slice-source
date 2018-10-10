@@ -52,7 +52,7 @@ import org.etri.slice.tools.adl.project.wizards.SLICEPomContants;
 /**
  * @author Administrator
  *
- */
+ */ 
 public class SLICECarSampleProjectWizard extends Wizard implements INewWizard {
 
 	private static final String SAMPLE_CAR_PROJECT_NAME = "org.etri.slice.examples.car";

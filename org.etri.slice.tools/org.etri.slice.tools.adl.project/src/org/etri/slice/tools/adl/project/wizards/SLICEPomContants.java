@@ -70,5 +70,5 @@ public class SLICEPomContants {
 			"			</plugin>\r\n" + 
 			"		</plugins>\r\n" + 
 			"	</build>\r\n" + 
-			"</project>"; 
+			"</project>";
 }

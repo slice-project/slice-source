@@ -200,7 +200,7 @@ public class SLICENewProjectWizard extends Wizard implements INewWizard {
 		IProject project = root.getProject(projectName);
 
 		if(!isDefaultLocation)
-		{ 
+		{
 			BuildPathsBlock.createProject(project, URIUtil.toURI(location), monitor);
 		}
 		else
