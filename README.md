@@ -1,5 +1,5 @@
 # SLICE Source Code Repository #
-> This is SLICE source code repository without distribution file.
+> This is SLICE source code repository without distributions.
 
 ## Structure of SLICE github Repository ##
 > We devide our source code based on the following categories..
