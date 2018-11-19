@@ -1,4 +1,4 @@
-# SLICE source Repository #
+# SLICE Source Code Repository #
 > This is SLICE source code repository without distribution
 
 ## Structure of SLICE github Repository ##
