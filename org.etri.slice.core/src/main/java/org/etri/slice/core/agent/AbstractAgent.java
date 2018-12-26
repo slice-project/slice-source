@@ -30,8 +30,6 @@ import org.apache.edgent.function.BiConsumer;
 import org.apache.edgent.providers.direct.DirectProvider;
 import org.apache.edgent.runtime.jmxcontrol.JMXControlService;
 import org.apache.edgent.topology.Topology;
-import org.apache.felix.ipojo.annotations.Invalidate;
-import org.apache.felix.ipojo.annotations.Validate;
 import org.etri.slice.api.agent.Agent;
 
 import com.google.gson.JsonObject;
@@ -41,17 +39,10 @@ public abstract class AbstractAgent implements Agent {
 	public static final String JMX_DOMAIN = "org.etri.slice.agents";
 	private final DirectProvider m_provider = new DirectProvider();
 	
-	@Validate
-	public void init() {
+	public AbstractAgent() {
 		m_provider.getServices().addService(ControlService.class,
                 new JMXControlService(JMX_DOMAIN, new Hashtable<>()));		
 	}
-	
-	@Invalidate
-	public void fini() {
-		m_provider.getServices().removeService(ControlService.class);		
-	}
-		
 	
 	@Override
 	public Future<Job> submit(Topology topology) {
