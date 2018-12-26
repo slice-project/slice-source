@@ -30,6 +30,7 @@ class EventWrapperCompiler {
 		import org.apache.felix.ipojo.annotations.Invalidate;
 		import org.apache.felix.ipojo.annotations.Property;
 		import org.apache.felix.ipojo.annotations.Requires;
+		import org.apache.felix.ipojo.annotations.Updated;
 		import org.apache.felix.ipojo.annotations.Validate;
 		import org.etri.slice.api.agent.Agent;
 		import org.etri.slice.api.inference.WorkingMemory;
@@ -46,7 +47,7 @@ class EventWrapperCompiler {
 	}
 	
 	def body(JvmType it, AgentDeclaration agent, ImportManager importManager) '''
-		@Component
+		@Component(managedservice="org.etri.slice.agent")
 		@Instantiate
 		public class «simpleName»Channel extends MqttEventPublisher<«importManager.serialize(it as JvmGenericType)»> {
 		
@@ -55,8 +56,9 @@ class EventWrapperCompiler {
 			@Property(name="topic", value=«simpleName».TOPIC)
 			private String m_topic;
 			
-			@Property(name="url", value="tcp://«agent.agency.ip»:«agent.agency.port»")
+			@Property(name="agent.agency.url", value="tcp://«agent.agency.ip»:«agent.agency.port»")
 			private String m_url;
+			private String m_prevUrl;
 			
 			@Requires
 			private WorkingMemory m_wm;
@@ -71,7 +73,7 @@ class EventWrapperCompiler {
 				return m_topic;
 			}
 			
-			protected String getMqttURL() {
+			protected synchronized String getMqttURL() {
 				return m_url;
 			}	
 			
@@ -96,6 +98,16 @@ class EventWrapperCompiler {
 			public void stop() {
 				super.stop();
 			}
+			
+		    @Property(name="agent.agency.url")
+		    public synchronized void setAgencyUrl(String url) {
+		    	if ( url.trim().equals(m_prevUrl) ) {
+		    		return;
+		    	}
+		    	
+		        m_prevUrl = url;   
+		        super.restart();
+		    }
 		}
 	'''		
 }
