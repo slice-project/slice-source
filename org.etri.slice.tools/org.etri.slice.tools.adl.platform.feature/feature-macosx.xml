@@ -38,13 +38,13 @@
          install-size="0"
          version="15.0.0.v201403281430"
          unpack="false"/>
-         
+
    <plugin
          id="com.google.guava"
          download-size="0"
          install-size="0"
          version="21.0.0.v20170206-1425"
-         unpack="false"/>         
+         unpack="false"/>
 
    <plugin
          id="com.google.inject"
@@ -187,13 +187,6 @@
 
    <plugin
          id="org.apache.lucene.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.apache.lucene.misc"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -1709,13 +1702,6 @@
          unpack="false"/>
 
    <plugin
-         id="ch.qos.logback.classic"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.ui.ide.application"
          download-size="0"
          install-size="0"
@@ -1914,6 +1900,62 @@
 
    <plugin
          id="org.eclipse.jdt"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.batik.constants"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.batik.i18n"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.xmlgraphics"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.io"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.concurrent"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.urischeme"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.genericeditor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ch.qos.logback.classic"
          download-size="0"
          install-size="0"
          version="0.0.0"
