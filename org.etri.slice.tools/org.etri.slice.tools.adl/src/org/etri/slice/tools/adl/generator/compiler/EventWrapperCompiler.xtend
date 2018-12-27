@@ -30,7 +30,6 @@ class EventWrapperCompiler {
 		import org.apache.felix.ipojo.annotations.Invalidate;
 		import org.apache.felix.ipojo.annotations.Property;
 		import org.apache.felix.ipojo.annotations.Requires;
-		import org.apache.felix.ipojo.annotations.Updated;
 		import org.apache.felix.ipojo.annotations.Validate;
 		import org.etri.slice.api.agent.Agent;
 		import org.etri.slice.api.inference.WorkingMemory;
