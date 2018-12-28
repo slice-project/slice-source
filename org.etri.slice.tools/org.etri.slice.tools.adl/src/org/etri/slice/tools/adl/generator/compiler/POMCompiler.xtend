@@ -273,7 +273,6 @@ class POMCompiler {
 			</parent>
 		
 			<artifactId>org.etri.slice.rules.«eContainer.fullyQualifiedName».«name.toLowerCase»</artifactId>
-			<version>«ADLGenerator.Version»</version>
 			<name>... rules for a «eContainer.fullyQualifiedName».«name.toLowerCase» agent </name>
 		
 		</project>
