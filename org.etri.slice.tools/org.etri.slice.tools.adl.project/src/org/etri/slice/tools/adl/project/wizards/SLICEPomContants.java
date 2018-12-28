@@ -40,7 +40,7 @@ public class SLICEPomContants {
 			"		<dependency>\r\n" + 
 			"			<groupId>org.etri.slice</groupId>\r\n" + 
 			"			<artifactId>org.etri.slice.commons</artifactId>\r\n" + 
-			"			<version>0.9.1</version>\r\n" + 
+			"			<version>1.1.0</version>\r\n" + 
 			"		</dependency>\r\n" + 
 			"		<dependency>\r\n" + 
 			"			<groupId>org.eclipse.xtend</groupId>\r\n" + 

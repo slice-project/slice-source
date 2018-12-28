@@ -27,7 +27,7 @@ class DistributionGenerator implements IGeneratorForMultiInput {
 			<parent>
 				<groupId>org.etri.slice</groupId>
 				<artifactId>org.etri.slice</artifactId>
-				<version>0.9.1</version>
+				<version>«ADLGenerator.Version»</version>
 				<relativePath>../pom.xml</relativePath>
 			</parent>
 		
@@ -101,23 +101,23 @@ class DistributionGenerator implements IGeneratorForMultiInput {
 				<dependency>
 					<groupId>org.etri.slice</groupId>
 					<artifactId>org.etri.slice.api</artifactId>
-					<version>0.9.1</version>
+					<version>«ADLGenerator.Version»</version>
 				</dependency>
 				<dependency>
 					<groupId>org.etri.slice</groupId>
 					<artifactId>org.etri.slice.core</artifactId>
-					<version>0.9.1</version>
+					<version>«ADLGenerator.Version»</version>
 				</dependency>
 				<dependency>
 					<groupId>org.etri.slice</groupId>
 					<artifactId>org.etri.slice.commons</artifactId>
-					<version>0.9.1</version>
+					<version>«ADLGenerator.Version»</version>
 				</dependency>										
 				«FOR e: resources.map[allContents.toIterable.filter(typeof(DomainDeclaration))].flatten»
 					<dependency>
 						<groupId>org.etri.slice.commons</groupId>
 						<artifactId>org.etri.slice.commons.«e.fullyQualifiedName»</artifactId>
-						<version>0.9.1</version>
+						<version>«ADLGenerator.Version»</version>
 					</dependency>
 				«ENDFOR»
 				
@@ -126,12 +126,12 @@ class DistributionGenerator implements IGeneratorForMultiInput {
 				<dependency>
 					<groupId>org.etri.slice</groupId>
 					<artifactId>org.etri.slice.agents.«agent.eContainer.fullyQualifiedName».«agent.name.toLowerCase»</artifactId>
-					<version>0.9.1</version>
+					<version>«ADLGenerator.Version»</version>
 				</dependency>
 				<dependency>
 					<groupId>org.etri.slice.devices</groupId>
 					<artifactId>org.etri.slice.devices.«agent.eContainer.fullyQualifiedName».«agent.name.toLowerCase»</artifactId>
-					<version>0.9.1</version>
+					<version>«ADLGenerator.Version»</version>
 				</dependency>
 				«ENDIF»
 				«IF resources.map[allContents.toIterable.filter(typeof(AgentDeclaration))].flatten.size > 1»
@@ -140,12 +140,12 @@ class DistributionGenerator implements IGeneratorForMultiInput {
 					<dependency>
 						<groupId>org.etri.slice</groupId>
 						<artifactId>org.etri.slice.agents.«e.eContainer.fullyQualifiedName».«e.name.toLowerCase»</artifactId>
-						<version>0.9.1</version>
+						<version>«ADLGenerator.Version»</version>
 					</dependency>
 					<dependency>
 						<groupId>org.etri.slice.devices</groupId>
 						<artifactId>org.etri.slice.devices.«e.eContainer.fullyQualifiedName».«e.name.toLowerCase»</artifactId>
-						<version>0.9.1</version>
+						<version>«ADLGenerator.Version»</version>
 					</dependency>										
 				«ENDFOR»	
 		-->
